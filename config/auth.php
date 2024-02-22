@@ -42,6 +42,7 @@ return [
         ],
     ],
 
+
     /*
     |--------------------------------------------------------------------------
     | User Providers
@@ -60,16 +61,16 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        'admins' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => App\Models\Admin::class,
         ],
-
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+        'employees' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Employee::class,
+        ],
     ],
+
 
     /*
     |--------------------------------------------------------------------------
